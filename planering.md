@@ -1,9 +1,5 @@
 # Lab 1 – Planering
 ## Problem 1
-## Problem 2
-## Problem 3
-## Del 4: Från källkod till körning# Lab 1 – Planering
-## Problem 1
 
 ### Steg 1: Förstå
 - **Vad är indata?** 
@@ -25,5 +21,24 @@ BERÄKNA hostnamn = platskod (små bokstäver) + "-" + enhetstyp (små bokstäve
 SKRIV UT "Nästa hostnamn: " + hostnamn
 
 ## Problem 2
+
+### Steg 1: Förstå
+- **Vad är indata?** 
+  Antal enheter som ska konfigureras (heltal).
+- **Vad är utdata?** 
+  Totalt antal minuter samt tiden omräknad till timmar och minuter.
+- **Vilka regler gäller?** 
+  Basinstallationen tar alltid 15 minuter totalt. Varje enhet tar ytterligare 10 minuter. Tiden ska redovisas både i minuter och i timmar + minuter (t.ex. 1 timme och 15 minuter).
+- **Vad kan gå fel?** 
+  Användaren kan skriva in bokstäver istället för siffror eller mata in ett negativt tal.
+
+### Steg 2: Planera
+LÄS IN antal_enheter
+BERÄKNA total_tid = 15 + (antal_enheter * 10)
+BERÄKNA timmar = total_tid // 60
+BERÄKNA minuter = total_tid % 60
+SKRIV UT total_tid
+SKRIV UT timmar och minuter
+
 ## Problem 3
 ## Del 4: Från källkod till körning
