@@ -41,4 +41,21 @@ SKRIV UT total_tid
 SKRIV UT timmar och minuter
 
 ## Problem 3
+### Steg 1: Förstå
+- **Vad är indata?** 
+  Enhetens IP-adress (text/sträng) och nätmask (heltal, t.ex. 24).
+- **Vad är utdata?** 
+  Nätverksadress i CIDR-notation (t.ex. "192.168.1.0/24").
+- **Vilka regler gäller?** 
+  Sista oktetten i IP-adressen ska ersättas med en nolla. Resultatet ska sättas ihop med nätmasken med ett snedstreck `/`.
+- **Vad kan gå fel?** 
+  Användaren kan mata in en ogiltig IP-adress eller en ogiltig nätmask.
+
+### Steg 2: Planera
+LÄS IN ip_adress
+LÄS IN natmask
+DELA IP-adressen vid punkterna (split)
+ERSÄTT sista delen med "0"
+SÄTT IHOP IP-adressen igen med punkter
+SKRIV UT resultat i formatet ip_adress/natmask
 ## Del 4: Från källkod till körning
